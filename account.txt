@@ -1,0 +1,39 @@
+public class AccountHolder {
+    private String name;
+    private int balance;
+
+    public AccountHolder(String name, int balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void withdraw(int amount) {
+        if (balance - amount >= 1000) {
+            balance -= amount;
+            System.out.println(amount + " rupees withdrawn from " + name + "'s account.");
+        } else {
+            System.out.println("Insufficient balance for withdrawal from " + name + "'s account.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        AccountHolder[] accountHolders = new AccountHolder[2];
+        accountHolders[0] = new AccountHolder("Account Holder 1", 3000);
+        accountHolders[1] = new AccountHolder("Account Holder 2", 2000);
+
+        accountHolders[0].withdraw(2000);  // Withdraw 2000 rupees from Account Holder 1
+        accountHolders[1].withdraw(1500);  // Withdraw 1500 rupees from Account Holder 2
+        accountHolders[0].withdraw(500);   // Withdraw 500 rupees from Account Holder 1
+        accountHolders[1].withdraw(1000);  // Withdraw 1000 rupees from Account Holder 2
+    }
+}
