@@ -1,0 +1,17 @@
+public class Employee1
+{
+	String name;
+	int year;
+	String address;
+	
+	public Employee1(String a, int b, String c) {
+		
+		name=a;
+		year=b;
+		address=c;
+	}
+	public void display()
+	{
+		System.out.println(name+" "+year+" "+" "+address);
+	}
+}
