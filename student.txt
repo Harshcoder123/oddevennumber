@@ -1,0 +1,13 @@
+public class Student1 {
+
+	public static void main(String[] args) {
+		
+       stu_Info s1=new stu_Info();
+       s1.setName("Harsh",1,997812234,"harsh45@gmail.com");
+       System.out.println(s1.getName());
+       System.out.println(s1.getId());
+       System.out.println(s1.getMobile());
+       System.out.println(s1.getEmail());
+	}
+
+}
