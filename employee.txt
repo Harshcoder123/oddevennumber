@@ -1,0 +1,18 @@
+public class Employee {
+
+	public static void main(String[] args) {
+		
+		
+				Employee1 e1 = new Employee1("ram",  1994," 64-c Wall Street");
+				Employee1 e2 = new Employee1("shyam",   2000," 68-D Wall Street");
+				
+				
+				e1.display();
+				e2.display();
+				
+
+		
+
+	}
+
+}
